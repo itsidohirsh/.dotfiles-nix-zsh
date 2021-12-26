@@ -3,7 +3,7 @@ All my .dotfiles in one place 😀
 
 Easily set up a development environment on a fresh machine!
 
-## Installation steps
+### Installation steps
 
 1. Clone this repository to your `home` directory
 2. `cd .dotfiles`
@@ -11,7 +11,9 @@ Easily set up a development environment on a fresh machine!
 4. Run `./install.sh`
 5. Open new terminal window to initiate `zsh` shell
 
-### Small issues
+And that's it!
+
+#### Small issues
 
 - installing `nvim` plugins in `--headless` causes error output, but **doesn't** break installation
 
