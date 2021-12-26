@@ -2,8 +2,6 @@
 
 let mapleader = " "
 
-syntax on
-
 set tabstop=4 
 set softtabstop=4
 set shiftwidth=4
@@ -36,7 +34,11 @@ set mouse=a
 
 call plug#begin('~/.config/nvim/plugged')
 
+" -- gruvbox colorscheme
 Plug 'sainnhe/gruvbox-material'
+" -- telescope
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 call plug#end()
 
