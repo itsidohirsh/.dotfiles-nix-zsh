@@ -19,7 +19,7 @@ alias vim='nvim'
 alias c='clear'
 
 # use nix
-if [ -e /home/ido/.nix-profile/etc/profile.d/nix.sh ]; then . /home/ido/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then . ~/.nix-profile/etc/profile.d/nix.sh; fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
