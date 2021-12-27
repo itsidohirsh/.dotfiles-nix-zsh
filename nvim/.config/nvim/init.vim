@@ -1,7 +1,5 @@
 " --- General 
 
-let mapleader = " "
-
 set tabstop=4 
 set softtabstop=4
 set shiftwidth=4
@@ -34,23 +32,53 @@ set mouse=a
 
 call plug#begin('~/.config/nvim/plugged')
 
-" gruvbox colorscheme
+" Colorscheme
 Plug 'sainnhe/gruvbox-material'
-" telescope
+" Telescope
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', {'do': 'make' }
-" lsp-config
+" LSP
 Plug 'neovim/nvim-lspconfig'
 
 call plug#end()
 
-" require plugins
+" Require plugins
 lua require('IdoHirsh0')
+
 
 " --- Colors
 
 set background=dark
 set termguicolors
 colorscheme gruvbox-material
+
+
+" --- Remaps
+
+let mapleader = ' '
+
+" - General
+
+" Navigate between splits
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
+
+" Resize splits
+noremap <C-Left> :vertical resize +3<Cr>
+noremap <C-Right> :vertical resize -3<Cr>
+noremap <C-Up> :resize +3<Cr>
+noremap <C-Down> :resize -3<Cr>
+
+" Save & quit
+noremap <leader>w :w<Cr>
+noremap <leader>q :wq<Cr>
+
+
+" - Telescope
+nnoremap <leader>f :Telescope find_files<Cr>
+nnoremap <leader>t :Telescope live_grep<Cr>
+
