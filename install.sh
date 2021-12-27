@@ -18,6 +18,8 @@ nix-env -iA \
         nixpkgs.bat \
         nixpkgs.direnv \
         nixpkgs.tree \
+        nixpkgs.ccls \
+
 
 # stow
 stow git

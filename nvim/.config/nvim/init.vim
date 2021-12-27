@@ -34,14 +34,18 @@ set mouse=a
 
 call plug#begin('~/.config/nvim/plugged')
 
-" -- gruvbox colorscheme
+" gruvbox colorscheme
 Plug 'sainnhe/gruvbox-material'
-" -- telescope
+" telescope
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+" lsp-config
+Plug 'neovim/nvim-lspconfig'
 
 call plug#end()
 
+" require plugins
+lua require('IdoHirsh0')
 
 " --- Colors
 
