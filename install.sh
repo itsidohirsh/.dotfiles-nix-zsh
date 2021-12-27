@@ -19,6 +19,8 @@ nix-env -iA \
         nixpkgs.direnv \
         nixpkgs.tree \
         nixpkgs.ccls \
+        nixpkgs.gcc \
+        nixpkgs.remake \
 
 
 # stow
