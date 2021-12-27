@@ -22,7 +22,6 @@ nix-env -iA \
         nixpkgs.gcc \
         nixpkgs.remake \
 
-
 # stow
 stow git
 stow zsh
@@ -39,6 +38,3 @@ antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
 
 # install neovim plugins
 nvim --headless +PlugInstall +qall
-
-# install language parsers for treesitter in nvim
-nvim --headless +TSInstall llvm lua make markdown nix bash python vim +qall
