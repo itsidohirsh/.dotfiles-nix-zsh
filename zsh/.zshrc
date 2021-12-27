@@ -18,6 +18,7 @@ alias ll='ls -l'
 alias la='ls -al'
 alias vim='nvim'
 alias c='clear'
+alias make='remake'
 
 # use nix
 if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then . ~/.nix-profile/etc/profile.d/nix.sh; fi
