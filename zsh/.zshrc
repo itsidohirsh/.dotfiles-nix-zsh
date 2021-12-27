@@ -20,6 +20,9 @@ alias vim='nvim'
 alias c='clear'
 alias make='remake'
 
+# Use vim mode in zsh
+bindkey -v
+
 # use nix
 if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then . ~/.nix-profile/etc/profile.d/nix.sh; fi
 
