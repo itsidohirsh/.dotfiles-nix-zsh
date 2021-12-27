@@ -69,11 +69,20 @@ let mapleader = ' '
 
 " - General
 
+" Save & quit
+noremap <leader>w :w<Cr>
+noremap <leader>q :wq<Cr>
+
 " Navigate between splits
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
+
+" Create splits
+nmap <leader>s <C-w>s
+nmap <leader>v <C-w>v
+nmap <leader>o <C-w>o
 
 " Resize splits
 noremap <C-Left> :vertical resize +3<Cr>
@@ -81,12 +90,8 @@ noremap <C-Right> :vertical resize -3<Cr>
 noremap <C-Up> :resize +3<Cr>
 noremap <C-Down> :resize -3<Cr>
 
-" Save & quit
-noremap <leader>w :w<Cr>
-noremap <leader>q :wq<Cr>
-
 
 " - Telescope
 nnoremap <leader>f :Telescope find_files<Cr>
-nnoremap <leader>t :Telescope live_grep<Cr>
+nnoremap <leader>p :Telescope live_grep<Cr>
 
