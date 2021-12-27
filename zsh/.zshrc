@@ -14,7 +14,8 @@ export NVM_COMPLETION=true
 source ~/.zsh_plugins.sh
 
 # aliases
-alias ls='ls -al'
+alias ll='ls -l'
+alias la='ls -al'
 alias vim='nvim'
 alias c='clear'
 
