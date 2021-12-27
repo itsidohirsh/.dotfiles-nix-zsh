@@ -92,6 +92,6 @@ noremap <C-Down> :resize -3<Cr>
 
 
 " - Telescope
-nnoremap <leader>f :Telescope find_files<Cr>
-nnoremap <leader>p :Telescope live_grep<Cr>
+nnoremap <leader>p :Telescope find_files<Cr>
+nnoremap <leader>f :Telescope live_grep<Cr>
 
