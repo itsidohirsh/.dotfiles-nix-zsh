@@ -28,7 +28,6 @@ And that's it 😜
     - `llvm`
     - `lua`
     - `make`
-    - `vim`
 
 ### Small issues
 

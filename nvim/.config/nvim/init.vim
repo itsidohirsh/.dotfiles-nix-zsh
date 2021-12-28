@@ -72,6 +72,7 @@ let mapleader = ' '
 " Save & quit
 noremap <leader>w :w<Cr>
 noremap <leader>q :wq<Cr>
+noremap <leader>s :so %<Cr>
 
 " Navigate between splits
 nmap <C-h> <C-w>h
@@ -80,9 +81,9 @@ nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
 " Create splits
-nmap <leader>s <C-w>s
-nmap <leader>v <C-w>v
-nmap <leader>o <C-w>o
+nmap <C-s>j <C-w>s
+nmap <C-s>l <C-w>v
+nmap <C-o> <C-w>o
 
 " Resize splits
 noremap <C-Left> :vertical resize +3<Cr>
@@ -90,6 +91,28 @@ noremap <C-Right> :vertical resize -3<Cr>
 noremap <C-Up> :resize +3<Cr>
 noremap <C-Down> :resize -3<Cr>
 
+" Move text
+nnoremap J :m .+1<Cr>==
+nnoremap K :m .-2<Cr>==
+vnoremap <A-j> :m '>+1<Cr>gv=gv
+vnoremap <A-k> :m '<-2<Cr>gv=gv
+
+" Make Y behave like C, D ...
+nnoremap Y y$
+
+" Undo break points
+inoremap , ,<c-g>u
+inoremap . .<c-g>u
+inoremap ; ;<c-g>u
+inoremap : ;<c-g>u
+inoremap ( (<c-g>u
+inoremap ) )<c-g>u
+inoremap { {<c-g>u
+inoremap } }<c-g>u
+inoremap [ [<c-g>u
+inoremap ] ]<c-g>u
+inoremap ! !<c-g>u
+inoremap ? ?<c-g>u
 
 " - Telescope
 nnoremap <leader>p :Telescope find_files<Cr>
