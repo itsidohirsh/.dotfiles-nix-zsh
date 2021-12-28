@@ -21,6 +21,7 @@ nix-env -iA \
         nixpkgs.ccls \
         nixpkgs.gcc \
         nixpkgs.remake \
+        nixpkgs.neofetch \
 
 # stow
 stow git
