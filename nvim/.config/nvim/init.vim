@@ -10,7 +10,7 @@ set numberwidth=4
 set relativenumber
 set signcolumn=number
 set noswapfile
-set nobackup
+set backupdir=/tmp//
 set undodir=~/.config/nvim/undodir
 set undofile
 set incsearch
@@ -86,9 +86,12 @@ let mapleader = ' '
 
 " - General
 
+" Change Esc key
+imap jk <Esc>
+
 " Save & quit
 noremap <leader>w :w<Cr>
-noremap <leader>q :wq<Cr>
+noremap <leader>q :q<Cr>
 noremap <leader>s :so %<Cr>
 
 " Navigate between splits
