@@ -1,0 +1,7 @@
+BasedOnStyle: LLVM
+
+# Force pointers to the Left
+PointerAlignment: Left
+
+# Break line for braces
+BreakBeforeBraces: Allman
