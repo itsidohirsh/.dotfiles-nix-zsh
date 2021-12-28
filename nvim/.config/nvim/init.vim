@@ -114,6 +114,8 @@ inoremap ] ]<c-g>u
 inoremap ! !<c-g>u
 inoremap ? ?<c-g>u
 
+" Ctrl+/ to comment line
+
 " - Telescope
 nnoremap <leader>p :Telescope find_files<Cr>
 nnoremap <leader>f :Telescope live_grep<Cr>
