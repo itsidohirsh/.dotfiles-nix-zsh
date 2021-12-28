@@ -20,14 +20,8 @@ And that's it 😜
 ### Additions
 
 - Couldn't find a way to autoinstall language parsers for treesiter in `nvim`
-- To install language parser of your choise run `nvim` at any directory and then `:TSInstall <language-of-your-choise>`
+- Inside `nvim` run `:TSInstall <language>` to install a language parser
 - To see all supported languages run `:TSInstallInfo`
-- My list of parsers:
-    - `bash`
-    - `c`
-    - `llvm`
-    - `lua`
-    - `make`
 
 ### Small issues
 

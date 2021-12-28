@@ -28,6 +28,3 @@ alias make='remake'
 
 # Use vim mode in zsh
 bindkey -v
-
-# copy .clang-format file to root
-sudo cp ~/.dotfiles/.clang-format /.clang-format
