@@ -65,6 +65,8 @@ Plug 'tpope/vim-commentary'
 Plug 'terryma/vim-multiple-cursors' 
 " Show indented lines
 Plug 'Yggdroot/indentLine'
+" Vim game
+Plug 'ThePrimeagen/vim-be-good'
 
 call plug#end()
 
