@@ -49,6 +49,16 @@ Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'onsails/lspkind-nvim'
 " Treesitter
 Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
+" Status bar
+Plug 'vim-airline/vim-airline'
+" NerdTree
+Plug 'preservim/nerdtree'
+" For Commenting gcc & gc
+Plug 'tpope/vim-commentary'
+" Surrounding ysw)
+Plug 'tpope/vim-surround' 
+" CTRL + N for multiple cursors
+Plug 'terryma/vim-multiple-cursors' 
 
 call plug#end()
 
@@ -114,9 +124,10 @@ inoremap ] ]<c-g>u
 inoremap ! !<c-g>u
 inoremap ? ?<c-g>u
 
-" Ctrl+/ to comment line
-
 " - Telescope
 nnoremap <leader>p :Telescope find_files<Cr>
 nnoremap <leader>f :Telescope live_grep<Cr>
+
+" - NerdTree
+nnoremap <F5> :NERDTreeToggle<Cr>
 
