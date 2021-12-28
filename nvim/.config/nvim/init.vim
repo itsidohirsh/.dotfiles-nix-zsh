@@ -32,13 +32,6 @@ set mouse=a
 
 call plug#begin('~/.config/nvim/plugged')
 
-" Colorscheme
-Plug 'sainnhe/gruvbox-material'
-" Telescope
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'nvim-telescope/telescope-fzf-native.nvim', {'do': 'make' }
 " LSP
 Plug 'neovim/nvim-lspconfig'
 " Autocomplition
@@ -49,16 +42,29 @@ Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'onsails/lspkind-nvim'
 " Treesitter
 Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
-" Status bar
-Plug 'vim-airline/vim-airline'
 " NerdTree
 Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ryanoasis/vim-devicons'
+" Telescope
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', {'do': 'make' }
+" Show git changes in file
+Plug 'airblade/vim-gitgutter'
+" Colorscheme
+Plug 'sainnhe/gruvbox-material'
+Plug 'morhetz/gruvbox'
+" Status bar
+Plug 'vim-airline/vim-airline'
 " For Commenting gcc & gc
 Plug 'tpope/vim-commentary'
-" Surrounding ysw)
-Plug 'tpope/vim-surround' 
 " CTRL + N for multiple cursors
 Plug 'terryma/vim-multiple-cursors' 
+" Show indented lines
+Plug 'Yggdroot/indentLine'
 
 call plug#end()
 
@@ -70,7 +76,8 @@ lua require('IdoHirsh0')
 
 set background=dark
 set termguicolors
-colorscheme gruvbox-material
+colorscheme gruvbox
+" colorscheme gruvbox-material
 
 
 " --- Remaps
@@ -124,12 +131,16 @@ inoremap ] ]<c-g>u
 inoremap ! !<c-g>u
 inoremap ? ?<c-g>u
 
+" Code formatting
+nnoremap <leader>f :lua vim.lsp.buf.formatting({})<Cr>
+
 " - Telescope
-nnoremap <leader>p :Telescope find_files<Cr>
-nnoremap <leader>f :Telescope live_grep<Cr>
+nnoremap <leader>pp :Telescope find_files<Cr>
+nnoremap <leader>pf :Telescope live_grep<Cr>
 
 " - NerdTree
 nnoremap <F5> :NERDTreeToggle<Cr>
+let g:NERDTreeGitStatusWithFlags = 1
 
 " - TreeSitter
 nnoremap <leader>if :TSInstallInfo<Cr>
