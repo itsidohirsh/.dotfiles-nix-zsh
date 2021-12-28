@@ -131,3 +131,7 @@ nnoremap <leader>f :Telescope live_grep<Cr>
 " - NerdTree
 nnoremap <F5> :NERDTreeToggle<Cr>
 
+" - TreeSitter
+nnoremap <leader>if :TSInstallInfo<Cr>
+nnoremap <leader>ii :TSInstall 
+
