@@ -38,3 +38,6 @@ antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
 
 # install neovim plugins
 nvim --headless +PlugInstall +qall
+
+# copy .clang-format file to root
+sudo cp ~/.dotfiles/.clang-format /.clang-format
