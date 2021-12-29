@@ -112,10 +112,10 @@ nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
 " Resize splits
-noremap <leader>rh :vertical resize +3<Cr>
-noremap <leader>rl :vertical resize -3<Cr>
-noremap <leader>rk :resize +3<Cr>
-noremap <leader>rj :resize -3<Cr>
+noremap <leader>rh :vertical resize +5<Cr>
+noremap <leader>rl :vertical resize -5<Cr>
+noremap <leader>rk :resize +5<Cr>
+noremap <leader>rj :resize -5<Cr>
 
 " Move text
 nnoremap <S-j> :m .+1<Cr>==

@@ -8,3 +8,6 @@ BreakBeforeBraces: Allman
 
 # Space after cast
 SpaceAfterCStyleCast: true
+
+# 4 spaces
+IndentWidth: 4
