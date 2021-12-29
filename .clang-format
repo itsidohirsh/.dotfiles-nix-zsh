@@ -5,3 +5,6 @@ PointerAlignment: Left
 
 # Break line for braces
 BreakBeforeBraces: Allman
+
+# Space after cast
+SpaeAfterCStyleCastc: true
