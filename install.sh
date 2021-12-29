@@ -41,3 +41,6 @@ nvim --headless +PlugInstall +qall
 
 # Create link to my .clang-format from the root to make it global
 sudo ln -s ~/.dotfiles/.clang-format /.clang-format
+
+# Make an empty .git directory in root to make the lsp autocomplition work 
+sudo mkdir /.git
