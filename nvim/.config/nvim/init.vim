@@ -89,12 +89,19 @@ let mapleader = ' '
 " - General
 
 " Change Esc key
-imap jk <Esc>
+imap jk <Esc><Esc><Esc>
+vmap jk <Esc><Esc><Esc>
+cmap jk <Esc><Esc><Esc>
 
 " Save & quit
 noremap <leader>w :w<Cr>
 noremap <leader>q :q<Cr>
-noremap <leader>s :so %<Cr>
+noremap <C-s> :so %<Cr>
+noremap <C-a> ggVG
+
+" Create splits
+nmap <leader>sj <C-w>s
+nmap <leader>sl <C-w>v
 
 " Navigate between splits
 nmap <C-h> <C-w>h
@@ -102,20 +109,15 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
-" Create splits
-nmap <C-s>j <C-w>s
-nmap <C-s>l <C-w>v
-nmap <C-o> <C-w>o
-
 " Resize splits
-noremap <C-Left> :vertical resize +3<Cr>
-noremap <C-Right> :vertical resize -3<Cr>
-noremap <C-Up> :resize +3<Cr>
-noremap <C-Down> :resize -3<Cr>
+noremap <leader>rh :vertical resize +3<Cr>
+noremap <leader>rl :vertical resize -3<Cr>
+noremap <leader>rk :resize +3<Cr>
+noremap <leader>rj :resize -3<Cr>
 
 " Move text
-nnoremap J :m .+1<Cr>==
-nnoremap K :m .-2<Cr>==
+nnoremap <S-j> :m .+1<Cr>==
+nnoremap <S-k> :m .-2<Cr>==
 vnoremap <A-j> :m '>+1<Cr>gv=gv
 vnoremap <A-k> :m '<-2<Cr>gv=gv
 
@@ -137,17 +139,13 @@ inoremap ! !<c-g>u
 inoremap ? ?<c-g>u
 
 " Code formatting
-nnoremap <leader>f :lua vim.lsp.buf.formatting({})<Cr>
+nnoremap <leader>ff :lua vim.lsp.buf.formatting({})<Cr>
 
 " - Telescope
-nnoremap <leader>pp :Telescope find_files<Cr>
-nnoremap <leader>pf :Telescope live_grep<Cr>
+nnoremap <leader>tp :Telescope find_files<Cr>
+nnoremap <leader>tl :Telescope live_grep<Cr>
 
 " - NerdTree
-nnoremap <F5> :NERDTreeToggle<Cr>
+nnoremap <leader>nt :NERDTreeToggle<Cr>
 let g:NERDTreeGitStatusWithFlags = 1
-
-" - TreeSitter
-nnoremap <leader>if :TSInstallInfo<Cr>
-nnoremap <leader>ii :TSInstall 
 
