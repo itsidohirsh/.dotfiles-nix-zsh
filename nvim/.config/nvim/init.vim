@@ -67,6 +67,8 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'Yggdroot/indentLine'
 " Vim game
 Plug 'ThePrimeagen/vim-be-good'
+" Auto bracket pairing
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
