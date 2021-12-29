@@ -142,6 +142,7 @@ inoremap ? ?<c-g>u
 
 " Code formatting
 nnoremap <leader>ff :lua vim.lsp.buf.formatting({})<Cr>
+nnoremap <leader>fm :%s//<Cr>
 
 " - Telescope
 nnoremap <leader>tp :Telescope find_files<Cr>
