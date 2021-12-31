@@ -70,6 +70,8 @@ Plug 'ThePrimeagen/vim-be-good'
 " Auto bracket pairing
 " Plug 'jiangmiao/auto-pairs'
 Plug '9mm/vim-closer'
+" Cheat sheet
+Plug 'dbeniamine/cheat.sh-vim'
 
 call plug#end()
 
