@@ -68,7 +68,8 @@ Plug 'Yggdroot/indentLine'
 " Vim game
 Plug 'ThePrimeagen/vim-be-good'
 " Auto bracket pairing
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
+Plug '9mm/vim-closer'
 
 call plug#end()
 
