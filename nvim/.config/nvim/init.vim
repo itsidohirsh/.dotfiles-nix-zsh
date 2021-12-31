@@ -73,7 +73,7 @@ Plug '9mm/vim-closer'
 
 call plug#end()
 
-" Require plugins
+" Require plugins configurations
 lua require('IdoHirsh0')
 
 
