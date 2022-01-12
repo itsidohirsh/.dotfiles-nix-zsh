@@ -1,4 +1,4 @@
-BasedOnStyle: LLVM
+BasedOnStyle: WebKit
 
 # Force pointers to the Left
 PointerAlignment: Left
