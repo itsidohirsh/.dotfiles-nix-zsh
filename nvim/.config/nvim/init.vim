@@ -101,7 +101,7 @@ cmap jk <Esc><Esc><Esc>
 " Save & quit
 noremap <leader>w :w<Cr>
 noremap <leader>q :q<Cr>
-noremap <C-s> :so %<Cr>
+noremap <C-s> :w<Cr>
 noremap <C-a> ggVG
 
 " Create splits
